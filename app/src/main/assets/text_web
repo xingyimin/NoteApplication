@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Marked in the browser</title>
+</head>
+<body>
+<div id="content">
+    <p >
+        text_markdown.post(new Runnable() {
+        @Override
+        public void run() {
+        Spanned spanned = MarkDown.fromMarkdown(html_markdown, new Html.ImageGetter() {
+        @Override
+        public Drawable getDrawable(String source) {
+        Drawable drawable = getResources().getDrawable(R.mipmap.ic_launcher);
+        drawable.setBounds(0, 0, 800, 800);
+        return drawable;
+        }
+        }, text_markdown);
+        text_markdown.setText(spanned);
+        }
+        });
+    </p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    document.getElementById('content').innerHTML =
+      marked('# Marked in the browser\n\nRendered by **marked**.');
+  </script>
+
+</body>
+</html>

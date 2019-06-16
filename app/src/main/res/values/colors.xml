@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F50057</color>
+    <color name="colorPrimaryDark">#C51162</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="blue">#7b68ee</color>
+    <color name="colorAccent">#FF80AB</color>
+    <color name="navigationBarColor_night">#FFFFFF</color>
+    <color name="color_bar">#000000</color>
+    <color name="windowBackground_night">@color/bootstrap_gray</color>
+</resources>

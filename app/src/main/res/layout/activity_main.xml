@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@color/windowBackground">
+
+    <!--<ListView-->
+        <!--android:id="@+id/list_note"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</ListView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sence_1">
+        <LinearLayout
+            android:id="@+id/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/layout_toolbar">
+
+            </include>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@+id/layout_toolbar"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
+        <android.support.design.widget.TabLayout
+            android:layout_below="@id/viewpager"
+            android:id="@+id/layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@mipmap/ic_launcher" />
+        </android.support.design.widget.TabLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_drawer_left"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:background="@color/windowBackground">
+        <RelativeLayout
+
+            android:id="@+id/topbar_left"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <RelativeLayout
+                android:background="@drawable/appapter_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_add_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/tag"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+            <TextView
+                android:layout_toRightOf="@+id/img_add_tag"
+                android:text="新建笔记"
+                android:textColor="@color/navigationBarColor"
+                android:paddingTop="10sp"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/btn_delete_tag"-->
+                <!--android:layout_width="65dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:src="@drawable/ali_delete"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentBottom="true"/>-->
+            <!--<TextView-->
+                <!--android:text="remove tag"-->
+                <!--android:textSize="28sp"-->
+                <!--android:layout_toRightOf="@+id/img_delete_tag"-->
+                <!--android:paddingBottom="18sp"-->
+                <!--android:textColor="@color/navigationBarColor"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--</RelativeLayout>-->
+        </RelativeLayout>
+        <!--<ListView-->
+            <!--android:layout_below="@id/topbar_left"-->
+            <!--android:background="@color/textColorPrimary"-->
+            <!--android:id="@+id/list_note"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+        <ExpandableListView
+            android:background="@drawable/tag_padding"
+            android:id="@+id/list_note"
+            android:layout_below="@+id/topbar_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

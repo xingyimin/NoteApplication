@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<style name="AppTheme" parent="Theme.AppCompat.DayNight">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/windowBackground_night</item>-->
+        <!--<item name="colorPrimaryDark">@color/navigationBarColor_night</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/windowBackground_night</item>
+        <item name="colorPrimaryDark">@color/navigationBarColor_night</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

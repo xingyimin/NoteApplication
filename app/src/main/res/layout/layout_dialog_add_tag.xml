@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp">
+    <RelativeLayout
+        android:id="@+id/dialog_input"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <TextView
+            android:id="@+id/text_add_tag_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="input tag name"
+            android:textSize="24dp"
+            android:textColor="@color/navigationBarColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:drawableBottom="@drawable/input_underline"
+            android:layout_below="@+id/text_add_tag_name"
+            android:id="@+id/input_tag_name"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:hint="input your tag name"
+            android:layout_marginLeft="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/dialog_input"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_left_add_tag"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"/>
+        <Button
+            android:id="@+id/btn_right_add_tag"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"/>
+    </RelativeLayout>
+
+</RelativeLayout>

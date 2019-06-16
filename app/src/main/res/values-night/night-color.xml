@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navigationBarColor_night">#FFFFFF</color>
+    <color name="color_bar">#000000</color>
+    <color name="windowBackground_night">@color/bootstrap_gray</color>
+</resources>
